@@ -128,8 +128,12 @@ function createBlock() {
     buttonRemove.onclick = function (event){
         event.preventDefault();
         delete formResult[input.name];
-        updateResult();
+        updateResult();        
         testForm.removeChild(newBlock);
+
+        setTimeout(() => {
+            clrearLabelSelected();
+        }, 100);        
     }
 
 
@@ -143,10 +147,19 @@ function createBlock() {
     testForm.appendChild(newBlock);
 }
 
+function clrearLabelSelected(){
+    const blockSelected = document.getElementById("blockSelected");
+    blockSelected.innerHTML = "Bloque Seleccionado:";    
+}
+
 // Limpio el form
 function clearForm() {
     console.log("Clear");
     const testForm = document.testForm;
+
+    lastIndex = 0;
+
+    clrearLabelSelected();
 
     while (testForm.firstChild) {
         testForm.removeChild(testForm.firstChild);
