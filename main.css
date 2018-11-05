@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    padding: 20px;
+}
+
+h1 {
+    background: #2196f3;
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.block-card {
+    padding: 10px;
+    position: relative;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.block-card:hover {
+    /* background: rgba(0, 0, 0, 0.055); */
+    cursor: pointer;
+}
+
+.block-hover {
+    background: rgba(0, 0, 0, 0.055);
+}
+
+.block-click {
+    color: #2196f3;
+}
+
+#form {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.input-text {
+    margin: 5px 0;
+    background: transparent;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    color: #444444;
+}
+
+span {
+    display: block;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="button"],
+button {
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 2px;
+    background: #2196f3;
+    color: #fff;
+    outline: 0;
+}
+
+.button-add {
+    background: #21f333;
+}
+
+.button-remove {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: transparent;
+    color: #f32121;
+}
+
+input[type="button"]:hover,
+button:hover {
+    cursor: pointer;
+}
+
+.result {
+    padding: 20px;
+    background: #e6e6e6;
+    margin-top: 20px;
+}
